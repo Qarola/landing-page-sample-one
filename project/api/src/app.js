@@ -3,6 +3,9 @@ const cookieParser = require('cookie-parser');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
 const routes = require('./routes/index.js');
+const jwt = require("jsonwebtoken");
+const { User } = require("./db")
+
 
 require('./db.js');
 
@@ -32,4 +35,22 @@ server.use((err, req, res, next) => { // eslint-disable-line no-unused-vars
   res.status(status).send(message);
 });
 
+server.use((req, res, next) => {
+  const token = req.cookies["token"];
+  if(token) {
+    jwt.verify(token, process.env.SESSION_SECRET, (err, decoded) => {
+      if(err) {
+        return next();
+      }
+      User.findOne({
+        where: { id: decoded.id },
+      }).then((user) => {
+        req.user = user;
+        return next();
+      });
+    });
+  } else {
+    return next();
+  }
+});
 module.exports = server;
