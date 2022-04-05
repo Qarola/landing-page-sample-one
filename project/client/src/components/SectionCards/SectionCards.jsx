@@ -3,7 +3,7 @@ import React from "react";
 const SectionCards = () => {
   return (
     <>
-    <section className="text-center">
+    <section className="text-center" id='features'>
         <h4 className="mb-5">
           <strong>Facilis consequatur eligendi</strong>
         </h4>

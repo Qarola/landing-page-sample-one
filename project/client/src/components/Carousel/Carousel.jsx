@@ -13,7 +13,7 @@ import image3 from "../../img/image33.jpg";
 
 const Carousel = () => {
   return (
-    <MDBCarousel showIndicators showControls fade className="shadow-3-strong">
+    <MDBCarousel showIndicators showControls fade className="shadow-3-strong" id='home'>
       <MDBCarouselInner>
         <NavBar />
         <MDBCarouselItem className="active">
@@ -21,9 +21,9 @@ const Carousel = () => {
           <div
             className="mask"
             style={{
-              background:
-                "linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7) 100%)",
-            }}
+              background: 'rgba(57, 192, 237, 0.6)'
+              /*"linear-gradient(45deg, rgba(29, 236, 197, 0.7), rgba(91, 14, 214, 0.7) 100%)", */ 
+           }}
           ></div>
           <MDBCarouselCaption>
             <h5>First slide label</h5>
@@ -47,7 +47,7 @@ const Carousel = () => {
           <MDBCarouselElement className="resize3" src={image3} />
           <div
             className="mask"
-            style={{ backgroundColor: "rgba(178, 60, 253, 0.6)" }}
+            style={{ backgroundColor: "rgba(178, 60, 253, 0.4)" }}
           ></div>
           <MDBCarouselCaption>
             <h5>Third slide label</h5>

@@ -25,18 +25,19 @@ const Ul = styled.ul`
     transition: transform 0.3s ease-in-out;
 
     li, a {
-      color: #fff;
+      color: #0000ff;
     }
   }
 `;
 
 const RightNav = ({ open }) => {
   return (
-    <Ul open={open}>
+    <Ul open={open} className='list'>
       <li>
         <a
           href="#home"
           rel="noreferrer"
+          className='page-scroll'
           /* target="_blank" */
         >
           Home
@@ -46,6 +47,7 @@ const RightNav = ({ open }) => {
         <a
           href="#features"
           rel="noreferrer"
+          className='page-scroll'
           /* target="_blank" */
         >
           Features
@@ -55,6 +57,7 @@ const RightNav = ({ open }) => {
         <a
           href="#about"
           rel="noreferrer"
+          className='page-scroll'
           /* target="_blank" */
         >
           About Us
@@ -64,18 +67,10 @@ const RightNav = ({ open }) => {
         <a
           href="#contact"
           rel="noreferrer"
+          className='page-scroll'
           /* target="_blank" */
         >
           Contact Us
-        </a>
-      </li>
-      <li>
-        <a
-          href="#login"
-          rel="noreferrer"
-          /* target="_blank" */
-        >
-          Log In
         </a>
       </li>
     </Ul>

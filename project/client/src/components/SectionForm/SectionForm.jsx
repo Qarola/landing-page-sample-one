@@ -1,14 +1,14 @@
 import React from "react";
-import { MDBInput, MDBCheckbox } from 'mdb-react-ui-kit';
+import { MDBInput, MDBTextArea } from 'mdb-react-ui-kit';
 
  
 const SectionForm = () => {
   return (
     <>
-      <main className="mt-5">
+      <main className="mt-5" id='contact'>
         <div className="container">
           <section class="mb-5">
-            <h4 className="mb-5 text-center">
+            <h4 className="mb-5 text-center title-form">
               <strong>Facilis consequatur eligendi</strong>
             </h4>
 
@@ -35,24 +35,24 @@ const SectionForm = () => {
                   </div>
                   {/* Password input  */}
                   <div className="form-outline mb-4">
-                  <MDBInput label="Password" id="typePassword" type="password" />
+                  <MDBTextArea label="Message" id='textAreaExample' rows={4} />
                   </div>
 
                   {/* Checkbox  */}
-                  <div className="form-check d-flex justify-content-center mb-4">
+                  {/* <div className="form-check d-flex justify-content-center mb-4">
                   <MDBCheckbox name='flexCheck' value='' id='flexCheckChecked' label='Subscribe to our newsletter' defaultChecked />
-                  </div>
+                  </div> */}
 
                   {/* Submit button */}
                   <button
                     type="submit"
                     className="btn btn-primary btn-block mb-4"
                   >
-                    Sign up
+                    Contact Us
                   </button>
 
                   {/*  Register buttons */}
-                  <div className="text-center">
+                 {/*  <div className="text-center">
                     <p>or sign up with:</p>
                     <button
                       type="button"
@@ -81,7 +81,7 @@ const SectionForm = () => {
                     >
                       <i className="fab fa-github"></i>
                     </button>
-                  </div>
+                  </div> */}
                 </form>
               </div>
             </div>
