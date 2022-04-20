@@ -1,5 +1,7 @@
 import React from "react";
 import { MDBInput, MDBTextArea } from 'mdb-react-ui-kit';
+import {ImWhatsapp} from 'react-icons/im';
+
 
  
 const SectionForm = () => {
@@ -97,7 +99,8 @@ const SectionForm = () => {
         target="_blank"
         rel="noopener noreferrer"
       >
-        <i class="fa fa-whatsapp whatsapp-icon"></i>
+        <ImWhatsapp className="whatsapp-icon"/>
+       {/*  <i class="fa fa-whatsapp whatsapp-icon"></i> */}
       </a>
 
       </main>
