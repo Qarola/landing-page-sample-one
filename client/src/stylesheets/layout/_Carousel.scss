@@ -1,0 +1,35 @@
+.resize1 {
+  height: 65vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  outline: none !important;
+  flex-wrap: wrap;
+}
+
+.resize2 {
+  height: 65vh;
+  width: 100%;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  outline: none !important;
+  flex-wrap: wrap;
+}
+
+.resize3 {
+  height: 65vh;
+  width: 100%;
+  object-fit: cover;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: transparent !important;
+  outline: none;
+  flex-wrap: wrap;
+}
+
