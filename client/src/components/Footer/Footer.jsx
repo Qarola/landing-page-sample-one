@@ -54,7 +54,7 @@ const Footer = () => {
           className="text-center p-3 bar"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
-          © 2024 - Allrights reserved - 
+          © 2024 - All rights reserved - 
           <a className="text-dark txt" href="https://cyantechsolutions.com/">
              {" "}CyanTechSolutions.com
           </a>
