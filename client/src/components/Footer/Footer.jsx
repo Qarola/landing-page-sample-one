@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="text-center py-4 align-items-center">
           <p>Follow «CyanTechSolutions» on social media</p>
           <a
-            href="#!"
+            href="https://www.instagram.com/cyan.tech.solutions/"
             className="btn btn-primary m-1"
             role="button"
             rel="noreferrer"
@@ -19,7 +19,7 @@ const Footer = () => {
            {/*  <i className="fa-brands fa-instagram"></i> */}
           </a>
           <a
-            href="#!"
+            href="https://www.facebook.com/cyantechsolutions/"
             className="btn btn-primary m-1"
             role="button"
             rel="noreferrer"
@@ -54,8 +54,8 @@ const Footer = () => {
           className="text-center p-3 bar"
           style={{ backgroundColor: "rgba(0, 0, 0, 0.2)" }}
         >
-          © 2022 Copyright:
-          <a className="text-dark txt" href="#!">
+          © 2024 - Allrights reserved - 
+          <a className="text-dark txt" href="https://cyantechsolutions.com/">
              {" "}CyanTechSolutions.com
           </a>
         </div>
